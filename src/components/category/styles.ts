@@ -21,8 +21,9 @@ export const styleCategory = StyleSheet.create({
         fontFamily: fontFamily.regular
     },
     containerSelected: {
+        borderWidth: 1,
+        borderColor: colors.green.base,
         backgroundColor: colors.green.base,
-        borderWidth: 0.
     },
     nameSelected: {
         color: colors.gray[100],

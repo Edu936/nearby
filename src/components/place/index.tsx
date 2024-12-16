@@ -22,7 +22,7 @@ export function Place({ data , ...rest}: Props) {
             <Image style={stylePlace.image} source={{ uri: data.cover}}/>
             <View style={stylePlace.content}>
                 <Text style={stylePlace.name}>{data.name}</Text>
-                <Text style={stylePlace.description}>{data.description}</Text>
+                <Text style={stylePlace.description} numberOfLines={2}>{data.description}</Text>
                 <View style={stylePlace.footer}>
                     <IconTicket size={16} color={colors.red.base}></IconTicket>
                     <Text style={stylePlace.tickets}>{data.coupons} cupons disponíveis</Text>
